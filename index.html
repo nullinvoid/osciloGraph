@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ua" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>osciloGraph</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+
+  <body>
+    <!--<div id="load">oscilo Graph</div> -->
+    <main class="flex column center">
+      <section id="graph-wrap" class="">
+        <div class="flex">
+          <div class="flex column space-between">
+            <span>+30B</span>
+            <span>0</span>
+            <span>-30B</span>
+          </div>
+          <canvas id="osciloGraph" width="720" height="480"></canvas>
+        </div>
+        <div class="flex space-between" style="margin-left: 2rem">
+          <span>0</span>
+          <span>1c</span>
+        </div>
+      </section>
+
+      <section id="settings" class="flex wrap center">
+        <section>
+          <header>Форма імпульса</header>
+
+          <div class="">
+            <label>
+              <input type="radio" name="impulse" value="rectangular"/>
+              <span>Прямокутна</span>
+            </label>
+          </div>
+
+          <div class="">
+            <label>
+              <input type="radio" name="impulse" value="triangular"/>
+              <span>Трикутна</span>
+            </label>
+          </div>
+
+          <div class="">
+            <label>
+              <input type="radio" name="impulse" value="random" checked/>
+              <span>Випадкова</span>
+            </label>
+          </div>
+        </section>
+
+        <section>
+          <header>Амплітуда, B</header>
+          <div class="">
+            <input type="radio" name="amplitude" value="30"/>
+            <span>30</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="amplitude" value="20"/>
+            <span>20</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="amplitude" value="10"/>
+            <span>10</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="amplitude" value="random" checked/>
+            <span>Випадкова</span>
+          </div>
+        </section>
+
+        <section>
+          <header>Частота, Гц</header>
+          <div class="">
+            <input type="radio" name="frequency" value="1"/>
+            <span>1</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="frequency" value="5"/>
+            <span>5</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="frequency" value="10"/>
+            <span>10</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="frequency" value="random" checked/>
+            <span>Випадкова</span>
+          </div>
+        </section>
+
+        <section>
+          <header>Полярність</header>
+          <div class="">
+            <input type="radio" name="polarity" value="1"/>
+            <span>+</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="polarity" value="-1"/>
+            <span>-</span>
+          </div>
+
+          <div class="">
+            <input type="radio" name="polarity" value="random" checked/>
+            <span>Випадкова</span>
+          </div>
+        </section>
+      </section>
+    </main>
+
+  <script src="main.js" charset="utf-8"></script>
+  </body>
+</html>

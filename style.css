@@ -1,0 +1,62 @@
+html, body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background: #242f3e;
+  color: white;
+  font-size: 100%;
+}
+
+main {
+  height: 100%;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+canvas {
+  max-width: 100%;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#settings section {
+  padding: 1rem;
+}
+
+#load {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  position: absolute;
+  background: black;
+  animation: load 1s 1s linear forwards;
+}
+
+@keyframes load {
+  from {opacity: 1}
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
+
+.flex {
+  display: flex;
+}
+.column {
+  flex-direction: column;
+}
+.space-between {
+  justify-content: space-between;
+}
+.center {
+  justify-content: center;
+  align-items: center;
+}
+.wrap {
+  flex-wrap: wrap;
+}
